@@ -33,15 +33,15 @@ def processDataFile(filePath):
 ###		MAIN
 def main():
 	#Set Necassary Variables
-	modelName = 'Template'  # (datsetName)+(structure)+[class/regr]
+	modelName = 'Diabetes_SVM'  # (datsetName)+(structure)+[class/regr]
 	dataFilePath = '~/Personal/MachLearn/Data/Diabetes-Data'	#create file path to data
 	ResultFile = resultFileSetup(modelName)	#load results file
 
 	#load data
-	processDataFile(filePath)
+	X_train, X_test, y_train, y_test = processDataFile(filePath)
 
 	#start model
-
+	print(X_train, X_test, y_train, y_test)
 	
 
 	#evaluate model
