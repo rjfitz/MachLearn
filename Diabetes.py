@@ -38,10 +38,12 @@ def main():
 	ResultFile = resultFileSetup(modelName)	#load results file
 
 	#load data
-	X_train, X_test, y_train, y_test = processDataFile(filePath)
+	#X_train, X_test, y_train, y_test = processDataFile(dataFilePath)
+
+	Data = np.array(read_csv(dataFilePath))
 
 	#start model
-	print(X_train, X_test, y_train, y_test)
+	print(Data)
 	
 
 	#evaluate model
